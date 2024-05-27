@@ -5,22 +5,70 @@
         <script src="game.js"></script>
     </head>
     <body>
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div id="view" class="bg-primary">1 2 3</div>
+        <div class="row d-flex justify-content-center h-75 mt-3">
+            <div class="col-3 d-flex">
+                <div id="option1" class="card d-flex w-100 h-75 align-self-center">
+                    <div id="option1header" class="card-header">
+                        Title
+                    </div>
+                    <div id="option1body" class="card-body">
+                        Body
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 d-flex">
+                <div id="option2" class="card d-flex w-100 h-75 align-self-center">
+                    <div id="option2header" class="card-header">
+                        Title
+                    </div>
+                    <div id="option2body" class="card-body">
+                        Body
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 d-flex">
+                <div id="option3" class="card d-flex w-100 h-75 align-self-center">
+                    <div id="option3header" class="card-header">
+                        Title
+                    </div>
+                    <div id="option3body" class="card-body">
+                        Body
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div id="view" class="bg-info">1 2 3</div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-8 d-flex">
+                <div class="card d-flex w-100">
+                    :)
+                </div>
             </div>
         </div>
         
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div id="view" class="bg-secondary">info</div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-4 d-flex justify-content-center">
+                <button type="button" class="btn btn-primary d-flex" data-bs-toggle="modal" data-bs-target="#squireModal">Stats</button>
             </div>
         </div>
+
+        <div class="modal fade" id="squireModal" tabindex="-1" aria-labelledby="squireName" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 id="squireName" class="modal-title fs-5">Squire Name</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Adventurer: <span id="adventurerName">Adventurer Name</span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
     </body>
 </html>
